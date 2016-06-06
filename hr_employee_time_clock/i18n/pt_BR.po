@@ -4,6 +4,19 @@ msgid ""
 msgstr ""
 
 #. module: hr_employee_time_clock
+#: model:ir.actions.act_window,name:hr_employee_time_clock.action_hr_timesheet_overtime
+msgid "Academy teachers"
+msgstr "Professores"
+
+#. module: hr_employee_time_clock
+#: view:hr.attendance.analysis.report:hr_employee_time_clock.view_hr_attendance_analysis_report_graph
+#: view:hr.attendance.analysis.report:hr_employee_time_clock.view_hr_attendance_analysis_report_tree
+#: model:ir.actions.act_window,name:hr_employee_time_clock.action_hr_attendance_analysis_report
+#: model:ir.ui.menu,name:hr_employee_time_clock.menu_hr_attendance_analysis_report
+msgid "Analysis by Timesheet"
+msgstr "Análise de Ponto"
+
+#. module: hr_employee_time_clock
 #: field:hr_timesheet_sheet.sheet,calculate_diff_hours:0
 #: model:ir.model,name:hr_employee_time_clock.model_hr_timesheet_sheet_sheet
 #: view:hr_timesheet_sheet.sheet:hr_employee_time_clock.timesheet_overtime
@@ -15,7 +28,7 @@ msgstr "Saldo Total"
 #: model:ir.model,name:hr_employee_time_clock.model_hr_timesheet_sheet_sheet
 #: view:hr_timesheet_sheet.sheet:hr_employee_time_clock.timesheet_overtime
 msgid "Remaining this timesheet"
-msgstr "Quadro de horas restante"
+msgstr "Horas restante"
 
 #. module: hr_employee_time_clock
 #: field:hr_timesheet_sheet.sheet,prev_timesheet_diff:0
@@ -29,50 +42,50 @@ msgstr "Ultima planilha de horários"
 #: model:ir.model,name:hr_employee_time_clock.model_hr_timesheet_sheet_sheet
 #: view:hr_timesheet_sheet.sheet:hr_employee_time_clock.timesheet_overtime
 msgid "Attendance this timesheet"
-msgstr "Presença na planilha de horários"
+msgstr "Frequência"
 
 #. module: hr_employee_time_clock
 #: field:hr_timesheet_sheet.sheet,analysis:0
 msgid "Attendance Analysis"
-msgstr "Análise de presença"
+msgstr "Análise de Frequência"
 
 #. module: hr_employee_time_clock
 #: view:hr_timesheet_sheet.sheet:hr_employee_time_clock.timesheet_overtime
 msgid "Overtime Analysis"
-msgstr "Análise de horas extras"
+msgstr "Análise de Horas Extras"
 
 #. module: hr_employee_time_clock
 #: view:hr.timesheet.current.open:hr_employee_time_clock.view_hr_timesheet_current_open_inherit
 msgid "Generate timesheets for employees having the following tag:"
-msgstr "Gerar planilha de horários que contenham a seguinte tag:"
+msgstr "Gerar planilha de horários para funcionários com a seguinte tag:"
 
 #. module: hr_employee_time_clock
 #: field:hr.timesheet.current.open,category_id:0
 #: model:ir.model,name:hr.model_hr_employee_category
 msgid "Employee Tag"
-msgstr "Tag de funcionário"
+msgstr "Tag de Funcionário"
 
 #. module: hr_employee_time_clock
 #: field:hr.timesheet.current.open,date_from:0
 msgid "Start Date"
-msgstr "Data de início"
+msgstr "Data de Início"
 
 #. module: hr_employee_time_clock
 #: field:hr.timesheet.current.open,date_to:0
 msgid "End Date"
-msgstr "Data final"
+msgstr "Data Final"
 
 #. module: hr_employee_time_clock
 #: code:addons/hr_employee_time_clock/wizard/create_timesheet_with_tag.py:44
 #, python-format
 msgid "Timesheet already exists for %s."
-msgstr "Planinlha de horários já existe para %s."
+msgstr "Planilha de horários já existe para %s."
 
 #. module: hr_employee_time_clock
 #: code:addons/hr_employee_time_clock/wizard/import_leave_requests.py:31
 #, python-format
 msgid "Data Error!"
-msgstr "Erro de dados!"
+msgstr "Erro de Dados!"
 
 #. module: hr_employee_time_clock
 #: code:addons/hr_employee_time_clock/wizard/import_leave_requests.py:31
@@ -95,33 +108,32 @@ msgstr "Selecionar *.csv"
 #: model:ir.model,name:hr_holidays.model_hr_holidays_status
 #: view:import.leave.requests:hr_employee_time_clock.view_import_leave_requests
 msgid "Leave Type"
-msgstr "Motivo da ausência"
+msgstr "Motivo da Ausência"
 
 #. module: hr_employee_time_clock
 #: field:import.leave.requests,employee_tag_id:0
 #: model:ir.model,name:hr.model_hr_employee_category
 #: view:import.leave.requests:hr_employee_time_clock.view_import_leave_requests
 msgid "Employee Tag"
-msgstr "Tag do funcionário"
+msgstr "Tag do Funcionário"
 
 #. module: hr_employee_time_clock
 #: view:import.leave.requests:hr_employee_time_clock.view_import_leave_requests
 #: model:ir.actions.act_window,name:hr_employee_time_clock.action_import_leave_requests
 #: model:ir.ui.menu,name:hr_employee_time_clock.menu_import_leave_requests
 msgid "Import Leave Requests"
-msgstr "Importar pedidos de ausência"
+msgstr "Importar Pedidos de Ausência"
 
 #. module: hr_employee_time_clock
-#: view:hr.timesheet.current.open:hr_employee_time_clock.view_hr_timesheet_current_open_inherit
 #: model:ir.ui.menu,name:hr_employee_time_clock.menu_act_hr_timesheet_sheet_form_open_current
 msgid "Generate Timesheets"
-msgstr "Gerar planilha de horários"
+msgstr "Gerar Planilha de Horários"
 
 #. module: hr_employee_time_clock
 #: code:addons/hr_employee_time_clock/models.py:104
 #, python-format
 msgid "Previous Timesheet:"
-msgstr "Última planilha de horários:"
+msgstr "Última Planilha de Horários:"
 
 #. module: hr_employee_time_clock
 #: code:addons/hr_employee_time_clock/models.py:124
@@ -139,13 +151,13 @@ msgstr "Data"
 #: code:addons/hr_employee_time_clock/models.py:228
 #, python-format
 msgid "Duty Hours"
-msgstr "Horas de serviço"
+msgstr "Horas Normais"
 
 #. module: hr_employee_time_clock
 #: code:addons/hr_employee_time_clock/models.py:229
 #, python-format
 msgid "Worked Hours"
-msgstr "Horas trabalhadas"
+msgstr "Horas Trabalhadas"
 
 #. module: hr_employee_time_clock
 #: code:addons/hr_employee_time_clock/models.py:230
